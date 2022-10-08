@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./src/Calendar
-          file: Dockerfile
+          file: ./src/Calendar/Dockerfile
           push: true
           tags: |
             ghcr.io/lukaicupic/calendar:latest

@@ -8,6 +8,8 @@ public class Program
 {
     public static void Main(string[] args)
     {
+        var fileName = Path.Combine("/data", DateTime.UtcNow.Ticks.ToString());
+        File.WriteAllText(fileName, "Bok");
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
